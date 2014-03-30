@@ -1,1 +1,1 @@
-angular.module('helloApp', ['helloApp.controllers']);
+angular.module('helloApp', ['helloApp.controllers','helloApp.services']);

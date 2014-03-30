@@ -5,6 +5,7 @@
 <g:javascript src="angular.js" />
 <g:javascript src="angular-route.js" />
 <g:javascript src="app.js" />
+<g:javascript src="angularServices.js" />
 <g:javascript src="angularController.js" />
 </head>
 <body>
@@ -12,7 +13,7 @@ Hi Arvind
 
 <div ng-app="helloApp" ng-controller="HomeCntrlr">
 {{name}} {{nick}}
-<div id="userata" ng-repeat="user in userdata">
+<div id="userata" ng-repeat="user in userList">
 <tr>
 <td>
 {{$index + 1}}
