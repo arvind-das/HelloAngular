@@ -4,8 +4,7 @@ angular.module('helloApp.controllers', []).controller('HomeCntrlr', function($sc
     
 		$scope.userList = [];
 	helloAppUserListservice.getUsers().success(function (response) {
-        //Dig into the responde to get the relevant data
-		
+        //Dig into the responde to get the relevant data	
         $scope.userList = response;
     });
 });

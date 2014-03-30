@@ -9,7 +9,7 @@ class HomeController {
 	}
 	def list(){
 		println "got a hit"
-		def data = [:],data1=[:],data2=[:]
+		def data = [:],data1=[:],data2=[:],data3=[:]
 		def dataarray = []
 		data.put("name", "arvind")
 		data.put("nick","89neuron")
