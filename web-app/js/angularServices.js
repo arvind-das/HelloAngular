@@ -1,21 +1,13 @@
-angular.module('helloApp.services', []).
-  factory('helloAppUserListservice', function($http) {
+angular.module('helloApp.services', []).factory('helloAppUserListservice', function($http) {
 
+	  var userListAPI = [];
 	  
-	  var userListAPI = {};
-
-	  userListAPI.getUsers = function(){
-	  
-	  $http({method: 'GET', url: '/HelloAngular/home/list'}).
-	    success(function(data, status, headers, config) {
-	      // this callback will be called asynchronously
-	      // when the response is available
-	    	return data;
-	    }).
-	    error(function(data, status, headers, config) {
-	      // called asynchronously if an error occurs
-	      // or server returns response with an error status.
-	    });
+	  userListAPI.getUsers = function() {
+	      return $http({
+	        method: 'GET', 
+	        url: '/HelloAngular/home/list'
+	      });
 	    }
-	  return userListAPI;
+	    return userListAPI;
+	  
   });
