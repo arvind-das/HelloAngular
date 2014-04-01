@@ -7,6 +7,9 @@ class HomeController {
     def index() {
 		
 	}
+	def route(){
+		
+	}
 	def list(){
 		println "got a hit"
 		def data = [:],data1=[:],data2=[:],data3=[:]
@@ -21,5 +24,8 @@ class HomeController {
 		data2.put("nick", "SIO")
 		dataarray.add(data2)
 		render dataarray as JSON
+	}
+	def check(){
+		render "prove it"
 	}
 }

@@ -9,7 +9,6 @@
 <g:javascript src="angularController.js" />
 </head>
 <body>
-Hi Arvind
 
 <div ng-app="helloApp" ng-controller="HomeCntrlr">
 {{name}} {{nick}}
@@ -27,6 +26,8 @@ nick : {{user.nick}}
 </tr>
 </div>
 </div>
+
+
 
 </body>
 

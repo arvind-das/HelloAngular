@@ -8,3 +8,8 @@ angular.module('helloApp.controllers', []).controller('HomeCntrlr', function($sc
         $scope.userList = response;
     });
 });
+
+routingDataApp.controller('NotificationCntrlr', function($scope) {
+	$scope.name = "Yusuke Uromeshi";
+	
+});
