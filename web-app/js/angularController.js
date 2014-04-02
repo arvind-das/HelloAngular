@@ -13,3 +13,8 @@ routingDataApp.controller('NotificationCntrlr', function($scope) {
 	$scope.name = "Yusuke Uromeshi";
 	
 });
+
+routingDataApp.controller('MessageCntrlr', function($scope,userHierachyService) {
+	$scope.name = "Goku";	
+	$scope.childName = userHierachyService.getChildName()
+});

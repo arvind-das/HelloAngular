@@ -1,17 +1,18 @@
 angular.module('helloApp', ['helloApp.controllers','helloApp.services']);
 
-var routingDataApp = angular.module('routingDataApp', ['ngRoute'])
+
+var routingDataApp = angular.module('routingDataApp', ['ngRoute','routingDataAppServices'])
 .config(['$routeProvider',function($routeProvider){
 $routeProvider.when('/',{
-	templateUrl: '/HelloAngular/partials/home.html',
+	templateUrl: '/partials/home.html',
     controller: 'NotificationCntrlr'
 }).when('/routing',{
-	templateUrl: '/HelloAngular/partials/home.html',
+	templateUrl: '/partials/home.html',
     controller: 'NotificationCntrlr'
 }).when('/home',{
-	templateUrl: '/HelloAngular/partials/home.html',
-    controller: 'NotificationCntrlr'
-});;
+	templateUrl: '/partials/user.html',
+    controller: 'MessageCntrlr'
+});
 	
 }])
 
