@@ -15,7 +15,9 @@ angular.module('routingDataAppServices', []).service('userHierachyService', func
 var childName = {};
 
 childName.getChildName = function(){
+	
 	return "Gohan"; 
 }
 return childName;
 });
+	

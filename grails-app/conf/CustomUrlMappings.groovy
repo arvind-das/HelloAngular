@@ -1,9 +1,15 @@
 
 class CustomUrlMappings {
+	
 
 	static mappings = {
 		
-"/arvind"(controller:"home",action:'check')
+		"/$controller/$action?/$id?"{
+			constraints {
+				// apply constraints here
+			}
+		}
+		
 	}
 
 }

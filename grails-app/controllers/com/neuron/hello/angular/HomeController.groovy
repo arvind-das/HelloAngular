@@ -4,6 +4,7 @@ import grails.converters.JSON
 
 class HomeController {
 	
+	static allowedMethods = [showPeopleGoingToMars:"GET"]
     def index() {
 		
 	}
@@ -27,5 +28,16 @@ class HomeController {
 	}
 	def check(){
 		render "prove it"
+	}
+	def showPeopleGoingToMars(){
+		println "we are hreere"+params
+		def people = [],human=[:]
+		human.put("name", "arvind")
+		people.add(human)
+		human.put("name", "krillin")
+		people.add(human)
+		human.put("name", "batman")
+		people.add(human)
+		respond people, [formats:['json', 'xml']];
 	}
 }

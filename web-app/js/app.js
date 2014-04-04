@@ -8,7 +8,7 @@ $routeProvider.when('/',{
     controller: 'NotificationCntrlr'
 }).when('/routing',{
 	templateUrl: '/partials/home.html',
-    controller: 'NotificationCntrlr'
+    controller: 'MessageCntrlr'
 }).when('/home',{
 	templateUrl: '/partials/user.html',
     controller: 'MessageCntrlr'
